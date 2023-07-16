@@ -15,28 +15,26 @@ import avatar from './avatar.png'
 
 // нужно создать правильный тип вместо any
 export type MessageType = {
-    id: number,
-    user: UserType,
-    message: TextMessageType,
-}
-export type UserType = {
-    avatar: typeof avatar,
-    name: string
-}
-export type TextMessageType = {
-    text: string,
-    time: string
+    id: number
+    user: {
+        avatar: string
+        name: string
+    }
+    message: {
+        text: string
+        time: string
+    }
 }
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
-        name: 'johnny Sans',  // можно менять
+        avatar: avatar, // ТИПИЗИРУЕТСЯ КАК string
+        name: 'Bobo',  // можно менять
     },
     message: {
-        text: 'Hello there!', // можно менять
+        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -44,7 +42,7 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Bobo Dula', // можно менять
+        name: 'Bibi', // можно менять
     },
     message: {
         text: 'зеркальное сообщение для тренировки css', // можно менять
