@@ -1,5 +1,7 @@
 .friendMessage {
-
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
 }
 
 .friendImageAndText {
@@ -7,7 +9,9 @@
 }
 
 .friendImageAndText img {
-
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 
 .friendText {
@@ -19,7 +23,9 @@
 }
 
 .friendName {
-
+    font-size: 20px;
+    font-weight: bold;
+    color: #0059b3;
 }
 
 .friendMessageText {
@@ -27,5 +33,7 @@
 }
 
 .friendTime {
-
+    display: flex;
+    justify-content: flex-end;
+    color: #0066cc;
 }
