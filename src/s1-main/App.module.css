@@ -1,11 +1,16 @@
 .App {
-    --header_height: 60px;
+
 }
 
 .hw {
-
+    margin-top: 10px; /* верхний отступ */
+    padding: 24px; /* отступ со всех сторон */
+    border: 2px solid #D9D9D9 /* рамка */
 }
 
 .hwTitle {
-
+    margin: 137px 0 0 70px; /* отступы */
+    font-weight: 600; /* вес шрифта */
+    font-size: 22px; /* размер шрифта */
+    color: #000;
 }
