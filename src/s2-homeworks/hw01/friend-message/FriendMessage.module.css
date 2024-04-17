@@ -1,11 +1,11 @@
 .friendMessage {
     display: grid;
-    grid-template-areas: 'lite'
+    grid-template-areas: 'im'
                         'time';
 }
 
 .friendImageAndText {
-    grid-area: lite;
+    grid-area: im;
     display: flex;
     justify-items: start;
 }
