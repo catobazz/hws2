@@ -9,6 +9,7 @@
 }
 
 .hwTitle {
+    font-family: Montserrat, sans-serif;
     margin: 137px 0 0 70px; /* отступы */
     font-weight: 600; /* вес шрифта */
     font-size: 22px; /* размер шрифта */
