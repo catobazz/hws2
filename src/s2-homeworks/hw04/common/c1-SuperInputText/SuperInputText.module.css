@@ -1,20 +1,40 @@
-.input:focus {
+.inputWrapper {
+    position: relative; /* Позволяет позиционировать внутренние элементы относительно родителя */
 }
 
 .input {
+    width: 468px; /* Ширина  */
+    height: 36px;
+    padding: 10px; /* Внутренний отступ */
+    border: 1px solid #ccc; /* Серая рамка */
+    border-radius: 2px; /* Слегка закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    box-sizing: border-box; /* Учитывать отступы и границы в ширине */
 }
 
-.inputWrapper {
+.input:focus {
+    border-color: #0066CC; /* Синий цвет рамки при фокусе */
+    outline: none; /* Убрать стандартное выделение */
 }
 
 .superInput {
 }
 
 .errorInput {
+    border-color: #e74c3c; /* Красный цвет рамки при ошибке */
 }
 
 .errorInput:focus {
+    border-color: #c0392b; /* Темно-красный цвет рамки при фокусе на ошибочном инпуте */
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.6); /* Тень при фокусе на ошибочном инпуте */
 }
 
 .error {
+    color: #e74c3c; /* Красный цвет текста */
+    font-size: 14px; /* Размер шрифта */
+    margin-top: 0.5rem; /* Отступ сверху */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: -1.5rem; /* Отступ снизу от инпута */
+    left: 0; /* Выравнивание по левому краю */
 }
+
