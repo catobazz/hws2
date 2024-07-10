@@ -1,11 +1,14 @@
 .pagination {
     display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Примерный отступ между блоками */
 }
 
 .text1 {
-
+    margin-right: 5px; /* Примерный отступ справа */
 }
 
 .text2 {
-
+    margin-left: 5px; /* Примерный отступ слева */
 }
+

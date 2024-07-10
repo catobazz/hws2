@@ -52,10 +52,15 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
+                if (res) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                }
                 // сохранить пришедшие данные
-
                 //
+            })
+            .finally(() => {
+                setLoading(false)
             })
     }
 
@@ -63,11 +68,13 @@ const HW15 = () => {
         // делает студент
 
         // setPage(
+        setPage(newPage)
         // setCount(
-
+        setCount(newCount)
         // sendQuery(
+        sendQuery({sort, page: newPage, count: newCount})
         // setSearchParams(
-
+        setSearchParams(sort)
         //
     }
 
@@ -75,12 +82,15 @@ const HW15 = () => {
         // делает студент
 
         // setSort(
+        setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
+        sendQuery({sort: newSort, page: 1, count: count})
         // setSearchParams(
-
+        setSearchParams(sort)
         //
+
     }
 
     useEffect(() => {
@@ -88,6 +98,7 @@ const HW15 = () => {
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
+
     }, [])
 
     const mappedTechs = techs.map(t => (

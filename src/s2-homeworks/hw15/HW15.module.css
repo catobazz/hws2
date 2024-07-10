@@ -1,17 +1,40 @@
+
 .tech {
-    width: 50vw;
+    width: 30vw;
+    padding: 12px 0 12px 17px;
 }
 
 .developer {
-
+    padding: 12px 0 12px 17px;
+    width: 30vw;
 }
 
 .techHeader {
-    width: 50vw;
+    width: 30vw;
+    display: flex;
+    gap: 10px;
+    background: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    padding: 11px 0 9px 17px;
 }
 
 .developerHeader {
-
+    display: flex;
+    width: 30vw;
+    gap: 10px;
+    background: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    padding: 11px 0 9px 17px;
 }
 
 .row {
@@ -20,8 +43,13 @@
 
 .rowHeader {
     display: flex;
+    margin-top: 30px;
+
 }
 
 .loading {
-
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    align-self: center;
 }
